@@ -40,3 +40,13 @@
     - name: Demo on vars from file
       debug:
         msg: URL_FILE = {{ URL_FILE }}
+## vars from prompt
+- name: Demo on variables from prompt
+  hosts: all
+  vars_prompt:
+    - name: URL
+      prompt: Enter URL
+  tasks:
+    - name: Print URL
+      debug:
+        msg: URL= {{ URL }}
