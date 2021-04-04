@@ -6,4 +6,4 @@
       register: OUT
     - name: Print Uptime
       debug:
-        msg: "{{OUT}}"
+        msg: "{{OUT_stdout}}"
