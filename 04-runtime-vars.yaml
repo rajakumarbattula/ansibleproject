@@ -8,7 +8,7 @@
       debug:
         msg: "{{OUT_stdout}}"
     - name: set a variable
-      set-fact:
+      set_fact:
         UPTIME_OUTPUT: "{{OUT.stdout}}"
     - name: print uptime
       debug:
