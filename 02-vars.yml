@@ -5,3 +5,13 @@
   tasks:
     - debug:
         msg: URL = {{ URL }}
+- name: Demo on task level variables
+  hosts: all
+  vars:
+    URL: play.example.com
+  tasks:
+    - name: Print URL
+      debug:
+        msg: URL = {{ URL }}
+      vars:
+        URL: tasks.example.com
