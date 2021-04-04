@@ -1,2 +1,2 @@
-34.239.118.190
-34.226.247.207
+34.239.118.190 ansible_ssh_user=root ansible_ssh_pass=DevOps321
+34.226.247.207 nsible_ssh_user=root ansible_ssh_pass=DevOps321
