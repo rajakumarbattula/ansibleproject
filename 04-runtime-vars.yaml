@@ -6,7 +6,7 @@
       register: OUT
     - name: Print Uptime
       debug:
-        msg: "{{OUT_stdout}}"
+        msg: "{{OUT.stdout}}"
     - name: set a variable
       set_fact:
         UPTIME_OUTPUT: "{{OUT.stdout}}"
