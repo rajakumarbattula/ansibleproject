@@ -34,6 +34,8 @@
 ## vars from files
 - name: Demo on variables from file
   hosts: all
+  vars_files:
+    - vars.yml
   tasks:
     - name: Demo on vars from file
       debug:
