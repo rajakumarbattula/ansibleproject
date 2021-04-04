@@ -24,3 +24,10 @@
     - name:
       debug:
         msg: URL1 = {{ URL1 }}
+## vars from inv file
+- name: Demo on variables from inventory file
+  hosts: all
+  tasks:
+    - name: Demo on vars from inv file
+      debug:
+        msg: URL2 = {{ URL2 }}
