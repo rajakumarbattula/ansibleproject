@@ -3,7 +3,7 @@
   tasks:
     - name: Grab uptime
       shell: uptime
-      register: out
+        register: OUT
     - name: Print Uptime
       debug:
        msg: "{{OUT}}"
