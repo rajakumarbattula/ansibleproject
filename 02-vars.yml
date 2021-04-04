@@ -1,3 +1,4 @@
+## play level vars
 - name: Demo on play variables
   hosts: all
   vars:
@@ -5,6 +6,7 @@
   tasks:
     - debug:
         msg: URL = {{ URL }}
+## task vars
 - name: Demo on task level variables
   hosts: all
   vars:
@@ -15,3 +17,10 @@
         msg: URL = {{ URL }}
       vars:
         URL: tasks.example.com
+## cli vars
+- name: Demo on CLI variables
+  hosts: all
+  tasks:
+    - name:
+      debug:
+        msg: URL1 = {{ URL1 }}
