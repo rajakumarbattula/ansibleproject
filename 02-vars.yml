@@ -31,3 +31,10 @@
     - name: Demo on vars from inv file
       debug:
         msg: URL2 = {{ URL2 }}
+## vars from files
+- name: Demo on variables from file
+  hosts: all
+  tasks:
+    - name: Demo on vars from file
+      debug:
+        msg: URL_FILE = {{ URL_FILE }}
