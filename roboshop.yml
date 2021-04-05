@@ -1,4 +1,5 @@
 - name: robo shop  project
   hosts: all
+  become: yes
   roles:
     - frontend
